@@ -19,7 +19,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class SpringTests {
 
     /**
-     * 前提: 需要在TestServiceImpl类上加@{@code service}注解
+     * 前提: 需要在TestServiceImpl类上加@{@code Service}注解
      * 若使用无参数构造方法，则需要指定扫描配置和刷新ApplicationContext容器。
      * <pre class="code">
      *  context.scan("com.effiu");
@@ -44,6 +44,5 @@ public class SpringTests {
         Person bean = context.getBean(Person.class);
         System.out.println(bean);
     }
-
 
 }
